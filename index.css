@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif
+}
+
+main {
+  margin: auto;
+  background: #ccc;
+  max-width: 10em;
+  padding: .5em;
+}
+
+div {
+  display: flex;
+}
+
+span {
+  width: 100%;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.button {
+  margin: .25em;
+  color: white;
+  background: grey;
+  cursor: pointer;
+  padding: .25em;
+  transition: opacity ease 0.5s
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+#enter {
+  width: 30%;
+  background: orange;
+}
+
+#display {
+  background: rgba(57, 231, 65, 0.5);
+  height: 2em;
+  margin: .25em;
+}
+
+main > div:nth-child(2) .button{
+  background: black;
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    max-width: 100%!important;
+  }
+  body {
+    background: #ccc;
+  }
+}
