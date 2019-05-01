@@ -40,7 +40,10 @@ p {
   background: grey;
   cursor: pointer;
   padding: .25em;
-  transition: opacity ease 0.5s
+  transition: opacity ease 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .button:hover {
@@ -56,9 +59,14 @@ p {
   background: rgba(57, 231, 65, 0.5);
   height: 2em;
   margin: .25em;
+  line-height: 2em;
+  padding-left: .25em;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-main > div:nth-child(2) .button{
+main > div:nth-child(2) .button {
   background: black;
 }
 
