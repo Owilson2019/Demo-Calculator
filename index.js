@@ -1,3 +1,7 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+}
+
 const enter = document.getElementById('enter')
 const display = document.getElementById('display')
 const btns = (() => {

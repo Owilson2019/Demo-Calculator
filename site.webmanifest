@@ -1,0 +1,16 @@
+{
+    "icons": [
+        {
+            "src": "/logo.png",
+            "type": "image/png",
+            "sizes": "532x532"
+        }
+    ],
+    "display": "standalone",
+    "name": "Calculator",
+    "short_name": "Calculator",
+    "start_url": "/",
+    "theme_color": "#ccc",
+    "background_color": "#ccc",
+    "orientation": "portrait" 
+}
